@@ -8,9 +8,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-/**
- * Created by shi on 16/11/2016.
- */
 
 public class testOKHttp {
 
@@ -32,7 +29,7 @@ public class testOKHttp {
     }
 
     //异步请求
-    public static void sendAsyncRequest(String url) {
+    private static void sendAsyncRequest(String url) {
         //请求前获取当前线程ID
         System.out.println(Thread.currentThread().getId());
         OkHttpClient client = new OkHttpClient();
