@@ -20,7 +20,7 @@ public class RangeHttp {
                 build();
         try {
             Response response = client.newCall(request).execute();
-            //如果响应头没有content-length字段或者content-length=0，则返回-1
+            //如果响应头没有content-length字段或者content-length=0，则返回-1.
             System.out.println("content-length: "+response.body().contentLength());
             if(response.isSuccessful()){
                 Headers headers = response.headers();
