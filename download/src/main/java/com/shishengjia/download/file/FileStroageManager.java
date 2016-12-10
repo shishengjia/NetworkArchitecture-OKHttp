@@ -28,6 +28,11 @@ public class FileStroageManager {
         mContext = context;
     }
 
+    /**
+     * 获取一个file
+     * @param url
+     * @return
+     */
     public File getFileByName(String url){
         File parent;
         //判断是否有外置存储卡

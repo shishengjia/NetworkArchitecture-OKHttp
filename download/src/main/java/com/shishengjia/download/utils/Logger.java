@@ -10,7 +10,7 @@ import java.util.Locale;
 
 public class Logger {
     private static final boolean DEBUG = true;
-
+    
     public static void debug(String tag,String message){
         if(DEBUG){
             Log.d(tag,message);
